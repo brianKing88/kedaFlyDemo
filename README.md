@@ -6,3 +6,4 @@
 4、替换资源文件 strings-config.xml 中 appid、apiKey、apiSecret 的值；
 5、运行 Demo测试能力；# kedaFlyDemo
 # kedaFlyDemo
+# kedaFlyDemo
