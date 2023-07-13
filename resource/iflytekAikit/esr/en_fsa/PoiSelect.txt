@@ -1,0 +1,220 @@
+#FSA 1.0;
+0	1	-
+0	1	<sWant>
+0	2	-
+0	2	<sWant>
+0	3	-
+0	3	<sWant>
+0	4	<sOpMap>
+0	5	-
+0	5	<sWant>
+0	6	-
+0	6	<sWant>
+0	7	-
+0	7	<sWant>
+0	8	-
+0	8	<sWant>
+0	9	-
+0	9	<trafficShow>
+0	10	-
+0	10	<sWant>
+0	11	<sCheck>
+0	12	<sLocate>
+0	13	-
+0	13	<locationProcess>
+0	14	-
+0	14	<sWant>
+0	15	<collectionSet>
+0	15	-
+0	64	<stable>
+1	16	<sGo>
+1	16	-
+2	17	<sGo>
+2	17	-
+2	43	<sGo2>
+3	18	<sLocate>
+3	18	-
+4	19	<sThe>
+4	19	-
+5	20	<sPut>
+6	21	<sTime>
+7	22	<sChoose>
+7	22	-
+8	23	<sQuery>
+9	24	<preTraffic>
+9	24	-
+10	25	<sCheck>
+10	25	-
+11	26	<poiCategory>
+12	27	<prePoi>
+13	28	<preLocation>
+13	28	-
+14	29	<naviOn>
+14	29	-
+15	30	<sCollection>
+16	31	<sCollection>
+17	32	<prePoi>
+18	33	<sThe>
+18	33	-
+19	34	<sMap>
+19	34	-
+20	35	<sThe>
+20	35	-
+21	36	<timeTail>
+21	36	-
+22	37	<routeThe>
+22	37	-
+23	38	<queryTail>
+23	38	-
+24	39	<sTraffic>
+25	40	<prePoi>
+25	40	-
+26	64	<preDes>
+26	64	-
+27	64	<poiCategory>
+28	41	<sLocation>
+29	42	<sThe>
+29	42	-
+30	64	-
+30	64	<collectionTail>
+31	64	-
+31	64	<collectionTail>
+32	43	-
+32	43	<sThe>
+33	44	<poiCategory>
+34	64	-
+34	64	<mapTail>
+35	45	<sPlace>
+36	46	-
+36	46	<sThe>
+37	47	-
+37	47	<preRoute>
+38	48	-
+38	48	<sThe>
+39	49	-
+39	49	<trafficTail>
+40	50	-
+40	50	<sThe>
+41	64	-
+41	64	<locationTail>
+42	51	<sNavi>
+43	52	<poi>
+44	53	<preDes>
+45	54	-
+45	54	<sTo>
+46	64	<sDesination>
+47	55	<sRoute>
+48	64	-
+48	64	<sDesination>
+49	64	-
+49	64	<trafficShow1>
+50	56	-
+50	56	<poiCategory>
+51	64	-
+51	64	<sPlease>
+52	57	-
+52	57	<poiTail>
+53	58	-
+53	58	<sThe>
+53	59	-
+53	59	<preLocation>
+53	62	<sCollection>
+54	60	-
+54	60	<sThe>
+55	64	-
+55	64	<routeTail>
+56	61	-
+56	61	<preDes>
+57	64	-
+57	64	<sPlease>
+58	62	<sDesination>
+59	62	<sLocation>
+60	64	-
+60	64	<placeTail>
+61	63	<poiCategory>
+62	64	-
+62	64	<sPlease>
+63	64	-
+63	64	<poiCategoryTail>
+;
+<sCheck>:check|find|look for|show|navigate to|search for|show me|is there any|search|check for|
+is there a|book|is there some|have;
+<poiCategoryTail>:near current location|near the destination|at current location|near destination|nearby|around|along route|near apple|around apple|around here|
+around the great lakes|around ohio university|around anhui university|around boston university|near home;
+<trafficTail>:display|view|messages|information|situation|view;
+<sTraffic>:traffic|route|the traffic;
+<preTraffic>:the live|real time|informing real time;
+<trafficShow>:show|display|read out|turn on|stop|turn off;
+<trafficShow1>:off|on;
+<sQuery>:remaining mileage|remaining kilometers|how far is it|how many kilometers|how many mileage|mileage left|how long does it take to;
+<queryTail>:to|for|left|to reach;
+<sRoute>:route|freeway route|avoid road|routes that avoid congestion;
+<preRoute>:high speed|fastest|shortest|economical|avoiding tollway|an alternate|new|no expressway|expressway;
+<routeTail>:without tolls|without expressway|without freeway|which avoids tolls|with tolls|without motorway|without traffic;
+<routeThe>:the|no|an|a;
+<sChoose>:switch to|i prefer|take|choose|avoid|change|abort|show|change to;
+<sTime>:how long will it take|how long does it take|time left|time left to|The remaining time|remaining time;
+<timeTail>:to|for;
+<stable>:orient the map in the direction of travel|keep the map north up|keep map north up|move the map to face north|point the map view towards north|point the view towards north|
+where am i located now|where am i located|where am i now|where am i|the map is a little small|i wanna a bigger map|let yps go|here we go|my current|where are we|
+which place is this|i want to navigate to|i want to go to|setting navigation please|map zoom out|want to|i want to navigate|i need to navigate|navigate to company|go to company|
+i need go home|go back to home|navigate to home|return to home|go to home|i wanna go to home|want to use navigation to darunfa|drive me to anhui university|go to darunfa|navigate to iflytek|
+i wanna know the position of kfc|show me the way to darunfa|how do we go to darunfa|take me to darunfa|find petrol pump|find fuel station|tell me a toilet along route|make the map bigger|i wanna a bigger map|i wanna a smaller map|
+store this position into favourites|add the position|add the address|add this address|begin the gps function|navigation begins|how long will it take to reach the end|how long does it take to reach the destination|time left to the destination|time left to the address|
+time left to address|how far is it to the end|how far is the destination|go to wangjiang road six hundred sixty six|how to go to wangjiang road six hundred sixty six|how to get to wangjiang road six hundred sixty six|i want to navigate to wangjiang road six hundred sixty six|i want to find a place to sleep|search good restaurants around the great lakes|search good restaurants next to the great lakes|
+hotel around company|where is the nearest supermarket|way to hospital around|gas station near the company|carpark around company|restaurant around company|take me to the home page|check for wendy yps around boston university|read out hotels at current location|look for grand hyatt hotel nearby|
+foods near apple|search hilton hotels around|find steak|i want ice cream|i want to search for hotels around apple|hotels around here|is there some hotels nearby|i want to search the hotels near apple|i want to search for hotels near apple|i want to have some food|
+check for four seasons hotel around here|how do i get to kfc|direct me to kfc|how to get to kfc|show the location of iflytek|how long will it take|tell me where is it|please fix my place|navigate please|i need go to company|
+show location of iflytek|how to go to iflytek|find mcdonald for me|go to india gate|zoom in map|zoom in|zoom in map to maximum|map is little big|i wanna smaller map|zoom out|
+add address|use gps|show navigation function|end navigation|end guiding|turn off navigation|how long does it take to reach destination|how long it takes to final address|remaining time|remaining time to address|
+pick up telephone|left kilometers|change route which avoids tolls|take an alternate route|traffic information on|read out traffic messages|turn off route information|traffic information off|stop informing route traffic|nearby parking lot|
+redial|i wanna find park nearby|navigate to surrounding hospital|where is nearest supermarket|carpark at destination|carpark at current location|search supermarket near home|is there cafe around company|gas station around company|gas station around home|
+hotel around home|restaurant around home|can you tell my location|i want to go company|drive me to company|find restaurant along route|i want to choose route without traffic|parking lot  around company|call back last person that called me|call back number from latest memory|
+start on navigation|go to office|find nearby charging station|i wanna bigger map|i want to collect current place|how long will it take to reach end|look for gas station around|show me way to park nearby|is there gas station near destination|find directions to cafe around work|search burger king near silicon valley|restaurants around anhui university|is there cafe around new york university|restaurant at current location;
+<locationProcess>:locate|show me|store;
+<preLocation>:my|my current|the current|current;
+<sLocation>:location|position|address|spot|place;
+<locationTail>:now;
+
+<sWant>:i want to|i need to|i need|i wanna|how to|how do we|how do i|help me|don ypt|where is|
+i wanna know|i want|do i need to|how much|take me to|i want|i ypd like|show me|i ypd like to|i would like to|please|help me|can you|i want the|i ypd like the|please show me|show me the|please show me the|i want to|i wanna|i would like to|i ypd like to|please|help me|can you|i want to|i wanna|i would like to|i ypd like to|please|help me|i want to|i wanna|i ypd like to|i would like to|can you show me|could you;
+
+<naviOn>:navigate|start on|switch to|open|show|turn on|launch|cancel|stop|close|
+shut down|use|start|begin|cancel|end|stop|turn off|start up|go to|
+unmute;
+<sNavi>:navigation|gps|map|route|guiding|guidance|navigating|current gps|current route guidance|gps guide|
+route guidance|trip|of trip|current route|bigger map;
+<sPlease>:please;
+<collectionSet>:set|add;
+
+<sCollection>:home|office|work|two d view|three d view|facing|heading up|forward up|to heading up|direction of travel facing|to heading up|direction of travel facing|face|view of heading up|the view of heading up|heading up|forward up|track up|north up|map to north up|view to north up|north facing up|global route|route overview|route preview|preview route|the global route|the route overview|the route preview|the preview route|location|position|address|spot|place|to north up;
+
+<collectionTail>:address|please|for me|up|forward|view|orientation|into favourites;
+
+<sGo>:go to|go back to|take me to|return back to|drive back to|head for|direct me to|navigate to|get|drive me|
+direct me|go|navigate|get|drive|take me|show|use the navigation to|use navigation to|tell me|
+show me|go to|get to|find|get me|drive me to|navigation to|
+switch to|change to|switch it to|change it to|direction of travel|front of the vehicle|switch the|change the|switch map|change map|switch the map|change the map|switch view|change view|switch the view|change the view|make the direction of travel|make the front of the vehicle|see|check|view|take a look at|store current|collect current|save current|add current|store this|collect this|save this|add this|store the|collect the|save the|add the|cancel|stop|close|turn off|cancel the|stop the|close the|turn off the;
+
+<sGo2>:go to|go back to|take me to|return back to|drive back to|head for|direct me to|navigate to|take me to|show me to|
+use the navigation to|use navigation to|get to|find|get me to|find a place to;
+<sLocate>:is there|tell me|locate a|find directions to|find road to|find the way to;
+<prePoi>:the position of|the location of|the way to|the places to;
+<sThe>:the|a|an|my|this;
+<poi>:poi name|iflytek|home|kfc|the kfc|a hospital|sleep|hospital|have sushi|wendy yps;
+<poiCategory>:restaurant|good restaurants|gas station|supermarket|the supermarket|parking lot|hotel|carpark|hotels|newark|
+hilton hotels|sheraton hotel|charging station|foods|four seasons hotel|food|barbecue|marriott hotel|the hotels|restaurants|
+university of science and technology of china|bring umbrella|buffet|inn|grand hyatt hotel|steak|ice cream|some food|good food|cafe|
+surrounding parking lot;
+<poiTail>:for me|on the way;
+<preDes>:around|near|nearest|close to|closest to|near the|near to|along|on the|lot nearby|
+adjacent|at;
+<sDesination>:my destination|destination|route|journey|to the address|to address;
+<sOpMap>:zoom in|enlarge|make|bigger|larger|clearer|reset|zoom out|narrow|smaller|
+reduce|zoom up|maximum zoom|minimum zoom;
+<sMap>:map|scale;
+<mapTail>:to maximum|to minimum|zoom level|smaller|largest;
+<sPut>:store|collect|save|put|favourite|like;
+<sPlace>:current place|address|place|location|position|address|spot|place;
+<sTo>:into|to;
+<placeTail>:favourites|favourite list|favourite;

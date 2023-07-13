@@ -1,0 +1,25 @@
+#FSA 1.0;
+0	1	-
+0	1	<sWant>
+0	6	<stable>
+1	2	-
+1	2	<sPlay>
+2	3	-
+2	3	<sThe>
+3	4	-
+3	4	<preVideo>
+4	5	<sVideo>
+5	6	-
+5	6	<videoTail>
+;
+<sWant>:help me|can you;
+<sPlay>:play|open|go to|select|switch to|turn off|Hide|shut down|stop|close|
+shut back to|watch|back to|resume|continue playing|repeat|stop|pause|quit|pass|
+watch|shut|next|skip|change|start|stop playing|start playing;
+<sThe>:the|this;
+<preVideo>:local|recently starred|recent collected|the previous|previous|the last|the current|current|recently;
+<sVideo>:video|videos|video file|youtube|channel|one|it|stored videos|radio;
+<videoTail>:in library|down|off|please|again;
+<stable>:play video|resume play back|one more time|once again|replay|start to play|start|skip|pause|play recently stored videos|
+back to the previous|watch the previous|i want to watch the previous video|play the next video|switch videos|select videos|shut video down|hide video folder|stop playing video|watch previous|
+replay previous video|next video|watch next|i want to watch next video|pass this one|play last video|repeat current video|pause video;

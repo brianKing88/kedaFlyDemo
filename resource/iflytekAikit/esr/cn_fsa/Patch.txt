@@ -1,0 +1,119 @@
+#FSA 1.0;
+
+0	1	<patchCmd>
+0	2	<inquiryWant>
+0	2	-
+2	3	<actInquiry>
+2	3	-
+3	4	<inquiryLoc>
+4	5	<inquiryDe>
+4	5	-
+5	1	<inquiryTail>
+0	6	<weaSchdWant>
+0	6	-
+6	7	<weaSchAct>
+6	7	-
+7	8	<weaSchData>
+8	9	<inquiryDe>
+8	9	-
+9	1	<weaSchTail>
+9	1	-
+0	1	<tag>
+;
+
+<patchCmd>:
+导航到starbucks|
+starbucks|
+starbucks怎么走|
+到starbucks怎么走|
+去starbucks怎么走|
+带我到starbucks|
+带我去starbucks|
+导到starbucks|
+导去starbucks|
+导航去starbucks|
+帮我导到starbucks|
+帮我导去starbucks|
+帮我导航到starbucks|
+帮我导航去starbucks|
+我要去starbucks|
+我想去starbucks|
+我要到starbucks|
+我想到starbucks|
+我要找starbucks|
+我想找starbucks|
+我要开车去starbucks|
+导航到最近的starbucks|
+starbucks在哪|
+我想查找starbucks|
+有没有starbucks在附近|
+找一家最快到达的starbucks|
+搜一下starbucks在哪里|
+我要找目的地附近的starbucks|
+我想找目的地附近的starbucks|
+家附近的starbucks|
+公司附近的starbucks|
+目的地附近的starbucks|
+沿途的starbucks|
+导航到附近的starbucks|
+附近的starbucks|
+周围的starbucks|
+酒后代驾|
+风速大一点|
+风速小一点|
+设定风向为双向|
+全景打开|
+全景影像|
+打开全景|
+打开唱吧|
+全局怎么用|
+重拨;
+
+<inquiryWant>:
+帮我|我想|我要|给我;
+
+<actInquiry>:
+查看|看一下|看下|查询;
+
+<inquiryLoc>:
+家附近|
+家周围|
+家周边|
+公司附近|
+公司周围|
+公司周边|
+沿途|
+导航路径上|
+沿路径|
+当前|
+当前位置|
+目的地|
+目的地附近|
+目的地周围;
+
+<inquiryDe>:
+的;
+
+<inquiryTail>:
+堵不堵|堵吗|堵车吗|实时路况|路况|交通状况|交通情况|路况怎么样|路况通畅吗|路况好不好;
+
+<weaSchdWant>:
+我想|我要|给我|帮我;
+
+<weaSchAct>:
+查询|查询一下|查看|查找|查找一下|查一下|看一下|看下|搜索|搜一下|检查|检查一下;
+
+<weaSchData>:
+今天|明天|后天|大后天|本周|下周|这周|最近几天|未来几天|下个礼拜|未来二十四小时|明后天;
+
+<weaSchTail>:
+日程|天气|温度|
+污染严重吗|
+PM二点五指数|
+有雾霾吗|洗车指数怎么样|穿衣指数怎么样|
+天气情况|天气状况|天气预报|天气怎么样|天气如何|天气好吗|
+雨大不大|会下雨吗|有没有下雨|啥天气|有雨吗|会有雪么|会有雨么|
+PM二点五是多少|会有雨夹雪吗;
+
+<tag>:
+语法文件版本一七零六二七;

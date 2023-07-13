@@ -1,0 +1,73 @@
+#FSA 1.0;
+0	1	-
+0	1	<albumWant>
+0	2	-
+0	2	<albumPlay>
+0	3	-
+0	3	<albumWant>
+0	4	-
+0	4	<albumWant>
+0	5	<albumWant>
+0	5	-
+0	6	<albumWant2>
+0	6	-
+0	8	<albumWant2>
+0	8	-
+0	9	<albumWant2>
+0	9	-
+0	10	-
+0	10	<albumWant2>
+0	27	<stableAlbum>
+1	6	<albumPlay>
+2	7	<albumPre>
+2	7	-
+3	8	<albumPlay>
+4	9	<albumPlay>
+5	10	<albumPlay>
+6	11	<Singer>
+7	12	<album>
+8	13	<sThe>
+8	13	-
+9	14	<Singer>
+10	15	<album>
+11	16	<sYps>
+12	17	<sPrep>
+12	17	-
+13	18	<albumPre>
+13	18	-
+14	19	<sYps>
+15	20	<asMiddle>
+16	21	<albumPre>
+16	21	-
+17	22	<sName>
+17	22	-
+18	23	<album>
+19	24	<singerTail>
+19	24	-
+20	25	<Singer>
+21	27	<album>
+22	26	<asMiddle>
+23	27	<albumTail>
+23	27	-
+24	27	<albumPre>
+24	27	-
+25	27	-
+25	27	<sPlease>
+26	27	<Singer>
+;
+<sPlease>:please;
+<albumWant>:i want to|i wanna;
+<albumWant2>:i want|give me|i wanna;
+<albumPlay>:play|open|listen|listen to|browse|search|search for|find|give me;
+<sThe>:the;
+<albumPre>:album|genre|song;
+<album>:album name|thriller|treasure|baby|ghost stories|a sky full of stars|lady|singles;
+<albumTail>:for me|please;
+<sYps>:yps;
+<Singer>:singer name|taylor swift|lady gaga|bruno mars|coldplay;
+<singerTail>:latest;
+<asMiddle>:by;
+<sPrep>:of;
+<sName>:stars;
+<stableAlbum>:i want to listen album singles|listen to album treasure|give me lady gaga's latest album|find lady gaga's latest album|album thriller by michael jackson|give me taylor swift yps album|give me lady gaga yps latest album|cry me river by justin timberlake|i want to listen to coldplay yps album ghost stories|put on some music|
+put in favourite songs|play album dangerous by michael jackson|i wanna some songs from favourites|play songs sequentially|play song on loop|put song on loop|make it to single loop|make it to loop playback;

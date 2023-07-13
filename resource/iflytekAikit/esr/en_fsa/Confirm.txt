@@ -1,0 +1,36 @@
+#FSA 1.0;
+0	1	<oilQuery>
+0	2	<chargeQuery>
+0	2	-
+0	3	<oilQuery1>
+0	4	<carCheck>
+0	5	<conditionQuery>
+0	6	<sCondition>
+0	9	<stable>
+1	9	-
+1	9	<oilQueryTail>
+2	7	-
+2	7	<preCharge>
+3	9	<oilQueryTail1>
+4	8	<preCondition>
+5	9	<sCondition>
+6	9	<conditionQuery>
+7	9	<sCharge>
+8	9	<carInformation>
+;
+<stable>:do i need charging|ok|yes|right|of course|no problem|sure|i am sure|exit|cancel|
+close|call off|not this|no please|return|back|confirm|stop|no|the third row|
+change|display my favourites|shut down|turn back;
+<oilQuery>:how many kilometers can i|remaining miles|remaining drive|how far can i|read out|remaining mileage|the left kilometers;
+<oilQuery1>:show;
+<oilQueryTail>:run|drive|remaining miles|the odometer|left;
+<oilQueryTail1>:remaining miles|the odometer;
+<conditionQuery>:check|show me;
+<sThe>:the;
+<preCondition>:car yps;
+<sCondition>:overall vehicle condition|car|car overall condition|car information|the overall vehicle condition;
+<chargeQuery>:search|searching|find;
+<preCharge>:nearby|car|the|search;
+<sCharge>:charging station|charging stations|charging place|charging points|remaining charge|remaining battery;
+<carCheck>:check;
+<carInformation>:condition|information|status|overall condition;

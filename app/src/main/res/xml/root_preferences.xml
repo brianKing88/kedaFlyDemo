@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:iconSpaceReserved="false"
+        app:key="vadLinkOn"
+        app:summary="@string/vadlinkon_desc"
+        app:title="@string/vadlinkon_title" />
+
+    <EditTextPreference
+        app:defaultValue="150000"
+        app:iconSpaceReserved="false"
+        app:key="vadResponsetime"
+        app:title="vad强行结束时间 (最小值:100000, 最大值:170000)"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:defaultValue="120000"
+        app:iconSpaceReserved="false"
+        app:key="vadSpeechEnd"
+        app:title="vad结束参数 (最小值:100000, 最大值:150000)"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="vadOn"
+        app:summary="建议true,true:开启vad, false:关闭vad"
+        app:title="vad功能开关" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="puncCache"
+        app:title="句尾标点是否为缓存模式" />
+
+</PreferenceScreen>

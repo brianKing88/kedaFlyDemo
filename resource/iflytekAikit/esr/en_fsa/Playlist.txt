@@ -1,0 +1,40 @@
+#FSA 1.0;
+0	2	<sWant>
+0	2	-
+2	3	<sPlay>
+3	4	<preMusic>
+3	4	-
+4	5	<sMusic>
+5	1	<playMode>
+5	1	-
+0	1	<playlist>
+;
+
+<playlist>:playlist;
+
+<sWant>:
+please|
+can you;
+
+<sPlay>:
+listen to|
+play|
+turn on|
+get|
+let yps have|
+come;
+
+<preMusic>:
+some;
+
+<sMusic>:
+music|
+songs;
+
+<sWant>:
+i want to|
+i wanna|
+i would like to|
+can you|Please;
+
+<playMode>:sequentially;

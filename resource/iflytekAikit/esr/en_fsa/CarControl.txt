@@ -1,0 +1,261 @@
+#FSA 1.0;
+0	1	-
+0	1	<preVolume>
+0	2	<volumeStable>
+0	3	-
+0	3	<sWant>
+0	4	-
+0	4	<sWant>
+0	5	-
+0	5	<preWind>
+0	6	-
+0	6	<sWant>
+0	7	-
+0	7	<ACMode>
+0	8	-
+0	8	<preFeel>
+0	9	-
+0	9	<preWind>
+0	10	-
+0	10	<sWant>
+0	11	-
+0	11	<sWant>
+0	12	<preTemperature>
+0	13	<sWant>
+0	14	<preWind2>
+0	15	<preWind>
+0	16	<sTemperature>
+0	17	-
+0	17	<sThe>
+0	18	-
+0	18	<sWant>
+0	19	-
+0	19	<preScreen>
+0	20	<screenStable>
+0	22	<sWant1>
+0	23	<sWant1>
+0	24	<sWant1>
+0	31	<sWant1>
+0	84	<stable>
+1	21	<sVolume>
+2	84	-
+3	22	<preWindow>
+4	23	<preAC>
+4	24	<preTemperature>
+5	25	<sThe>
+5	25	-
+6	26	<preAC>
+7	27	<sAC>
+7	27	-
+8	28	<middleFeel>
+8	28	-
+9	29	<sThe>
+9	29	-
+10	30	<preEquip>
+10	30	-
+11	31	<preWindow>
+12	32	<sThe>
+12	32	-
+13	33	<preVolume>
+14	84	<sWind2>
+15	34	<sWind>
+16	35	<sPrep>
+16	35	-
+17	36	<sAC>
+18	37	<sAC>
+19	38	<sScreen>
+20	84	-
+21	39	-
+21	39	<sTo>
+22	40	-
+22	40	<sThe>
+23	41	-
+23	41	<sThe>
+24	42	-
+24	42	<sThe>
+25	43	<sWind>
+26	44	-
+26	44	<sAC>
+27	45	<sOn>
+28	84	<sFeel>
+29	46	<sWind>
+30	47	-
+30	47	<sThe>
+31	48	-
+31	48	<sThe>
+32	49	<sTemperature>
+33	50	<sVolume>
+34	84	-
+34	84	<sPlease>
+35	84	<temperatureRange1>
+36	84	<preAC>
+37	84	<ACMode>
+38	84	-
+38	84	<screenTail>
+39	51	-
+39	51	<volumeTail>
+40	52	<sWindow>
+41	53	<sAC>
+41	54	<sSeat>
+41	55	<sAC>
+42	56	<sTemperature>
+42	84	<sTemperature>
+43	57	-
+43	57	<sPrep>
+44	58	-
+44	58	<sTo>
+45	84	-
+45	84	<sPlease>
+46	59	-
+46	59	<preWind>
+47	60	<sEquip>
+48	61	<sWindow>
+49	84	-
+49	84	<sPlease>
+50	62	<sTo>
+51	84	-
+51	84	<sPlease>
+52	63	-
+52	63	<windowTail>
+53	64	-
+53	64	<ACTail>
+54	65	<sAC>
+55	66	<preSeat>
+56	67	<sPrep>
+56	68	-
+56	68	<preSeat>
+56	84	<temperatureTail>
+57	84	<windTail>
+58	69	<ACMode>
+59	70	-
+59	70	<sPrep>
+60	71	-
+60	71	<EquipTail>
+61	72	-
+61	72	<sPrep>
+62	84	<volumeTail>
+63	84	-
+63	84	<sPlease>
+64	84	-
+64	84	<sPlease>
+65	84	-
+65	84	<sPlease>
+66	73	-
+66	73	<sThe>
+67	74	<temperatureRange>
+68	75	-
+68	75	<sThe>
+69	84	-
+69	84	<sPlease>
+70	76	-
+70	76	<preWindNum>
+71	84	-
+71	84	<sPlease>
+72	77	<sThe>
+73	78	<sSeat>
+74	84	-
+74	84	<sDegrees>
+75	79	<sSeat>
+76	84	<windNum>
+77	80	<sPassenger>
+78	84	-
+78	84	<sPlease>
+79	81	-
+79	81	<seatTail>
+80	82	-
+80	82	<sSide>
+81	84	-
+81	84	<sPlease>
+82	83	-
+82	83	<windowTail>
+83	84	-
+83	84	<sPlease>
+;
+<sPassenger>:driving|front passenger|rear seat passenger|driver yps|passenger|passenger yps|drive|driver;
+<sSide>:side;
+<preEquip>:open|close|turn off|raise|shut down|turn on|switch on|unfold|switch off|shut|
+set;
+<sEquip>:headlights|instrument lights|low beam|high beam|fog lights|sunshade|the car sunshade|atmosphere lamp|the automobile ambient atmosphere lamp|boot|
+the trunk|wiper|wipers|aircon;
+<EquipTail>:open|down|be open|close|for me|on|off;
+<preWindNum>:auto|level;
+<windNum>:one|two|three|four|five|six|seven|eight|speed;
+<preFeel>:it yps|i ypm|i am|i feel|the temperature is|the heat is|the weather is;
+<middleFeel>:a little|a bit|too|very|so|really|rather;
+<sFeel>:hot|high|cold|cool|chilly|low|too low|killing me|hot here|hot to death|
+roasting|freezing to death|cold here|frozen|freezing;
+<sTo>:to|down to;
+<sOn>:on|off;
+<ACMode>:automatic mode|cooling mode|recycle mode|heating mode|inner loop|recirculation|air recirculation|automatic|recirculation mode|recycle mode|
+fresh air mode|auto mode|auto|hottest|cooling;
+<preSeat>:of|for|on;
+<sSeat>:driving seat|driver yps seat|front passenger seat|driver yps seat|passenger side|passenger side seat|driver side|driving side|driver yps side|driver seat;
+<seatTail>:please|ac|be open|be closed;
+<stable>:air conditioner coolest|it yps cold|very cold|it yps hot|very hot|cool down|raise windows please|resume|next to|please pause|
+warmer on|roof open|highest|can you slide the roof|i want cold air|command the temp to cool down|i want the roof open|more sound please|no sound please|end page please|
+go to|sounds on please|switch on the ac|turn on aircon|ac off please|switch off air conditioner|aircon off|raise the temperature of ac|i want the temperature higher|help me raise the temperature|
+raise the ac temperature|set ac temperature higher|make it warmer|i want it hotter|decrease the temperature|i want it cooler|temperature increased by three degrees|turn down the temperature by two degrees|air conditioning temperature lowered by three degrees|decrease the temperature by two|
+turn on the ac on the driver side|help me turn on the driver yps seat ac|set ac auto off|turn off ac cooling|close outer loop|blow face|blow face foot|blow windscreen foot|air conditioning temperature adjusted to the lowest|set the air conditioning temperature to the lowest|
+temperature to the minimum|air conditioning temperature is adjusted to the highest|the temperature is adjusted to the maximum|adjust the air conditioning temperature to the highest|maximize the temperature|air conditioner hottest|adjust the air speed to three|speed to three|fan level decrease to level three|wind level decrease to level four|
+set fan to three|adjust the air speed to the minimum|adjust the air speed to the maximum|highest fan speed|open sunroof please|open the sunroof|close the sunroof please|turn off the windows|sunshade open|turn on the sunshade|
+switch on the sunshade|close the car sunshade|turn off the car sunshade|turn off the atmosphere lamp|switch off the atmosphere lamp|shut down the atmosphere lamp|can you open the trunk for me|i want the window of the driving side open|i want the window of the driver side open|i want the window of the driver yps side open|
+i want to open the window of the driver side|i want to open the window of the driver yps side|i want the window of the front passenger side open|can the window of the driving side be closed|help me close the window of the driving side|i want to close the window of the driver side|i want to close the window of the driver yps side|i want the window of the driver side closed|i want the window of the driving side closed|close the driver yps window|
+close the window on the drive side|can the window of the driver side be closed|can the window of the driver yps side be closed|can the window of the front passenger side be closed|help me close the window of the front passenger side|window on the passenger side up|window on the passenger side down|i want the window of the front passenger side closed|close the passenger yps window|i want to open system settings|
+i want to close system settings|turn off the settings|turn on the settings|take me to the home page|switch to the main menu|move to the main interface|adjust the screen brightness to maximum level|make the screen brightness to maximum level|dim screen below minimum brightness level|the least brightness|
+decrease the brightness to minimum|a little louder|turn down the voice a little|turn down the voice|set yourself on mute|mute yourself|sound to twenty|adjust the sound to the highest|turn the volume to maximum|i want to turn the volume up to the maximum|
+keep your voice maximized|turn it up to full volume|maximize the volume|the sound is adjusted to the lowest|turn the volume to a minimum|i want to turn the volume down to the minimum|make the volume the lowest|help me unmute the navigation|unmute navigation|cancel navigation yps mute|
+turn up media volume|media volume up a little|turn up navigation volume|media volume down a little|i want to turn the media volume up to the highest|voice volume maximum|gps exits|quit music|open voice settings please|start up the voice settings|
+leave voice settings|shut down voice settings|turn off automatic close automatic mode|i am  bit  cold|i am  so cold|i am  frozen|turn on ac on driver side|help me turn on driver yps seat ac|i want ac automatic mode|air conditioning temperature is adjusted to highest|
+air volume down|increase fan level to three|increase fan speed to three|decrease fan speed to three|turn on ac of driver yps seat|turn on ac for driver yps seat|turn on driver yps seat ac|auto ac on|set air conditioning temperature to lowest|temperature at lowest|
+temperature at max|turn wind low|adjust air speed to three|show odometer|show me car information|sunroof open|sunroof close;
+<preScreen>:make|please make|want to make|maximum|lower|increase to|please increase|want to|increase|turn down;
+<sScreen>:screen|the screen|the light|level of brightness|lower brightness|brightness|the highest level of brightness;
+<screenTail>:the brightest|to the brightest|brighter|darker|darkest|dark|to the lowest|to the darkest|the darkest;
+<screenStable>:top brightness;
+<preVolume>:increase|decrease|louder|the largest|largest|max|maximum|turn down|turn up|adjust|
+turn|lower|minimum|lowest|raise|top|want to set|mute|stop|put|
+make;
+<sVolume>:the volume|volume|air volume|sound|the sound|voice|the voice|the ac air volume|the air volume|the ac volume|
+the volume level|the temperature volume;
+<volumeTail>:up|louder|down|on|off|maximum|minimum|lower|the minimum|the maximum|
+the highest|the lowest|level|please|highest|lowest;
+<volumeStable>:mute|turn on mute|activate mute|sounds Off|mute sounds|set on Mute|mute on|open mute|enable mute|unmute|
+mute off|off mute|deactivate mute|disable mute|turn off mute|mute off|quiet down|set yourself on mute;
+<sThe>:the;
+<sWant>:i want to|i wanna|help me|can|please|can you|help me to|can|give me;
+<sWant1>:i want|i wanna|help me|can|give me;
+<preWindow>:open|close|turn off|raise|switch off|switch on|roll off|roll down;
+<sWindow>:window|sunroof|roof|roof for sunlight|sunlight roof|windows|car window|car roof|car windows|driver yps window|
+driver window|the passenger seat window|driver seat window|the window of the driver yps side|the window of the driving side|the window of the driver side|the windows;
+<windowTail>:open|down|be open|close|for me|up|be closed|closed;
+<preAC>:close|turn off|turn down|lower|shut down|cool down|switch on|open|turn on|stop|
+start|start up|activate|close|switch off|give me|set|on|activate;
+<sAC>:ac|auto ac|ac auto|air|aircond|air cond|air conditioning|auto air conditioning|air conditioner|conditioner|
+defrost;
+<ACTail>:off|on|open|close|to the lowest|to the highest;
+<sPlease>:please;
+<preTemperature>:minimum|maximum|highest|the highest|adjust|turn to|set to|set|lower down|lowest|
+raise|increase|raise up|turn up|turn on|turn down|crank up|heater up|make|decrease|
+down|decrease to|lower|drop|activate|add|keep|tune|rise|change|
+turn|start up|reduce|maximize|reduce|up|cool down;
+<sTemperature>:temperature|highest temperature|heat|the temperature|the ac temperature|temperature of ac|it|air conditioning|ac temperature|air conditioning temperature;
+<temperatureTail>:up|down|higher|lower|warmer|hotter|cooler|colder|minimized|the coolest|
+maximized|the hottest|the highest|the lowest;
+<sPrep>:to|by|at|on|is|of;
+<temperatureRange>:one|two|three|four|five|six|seven|eight|nine|ten|
+eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|
+twenty one|twenty two|twenty three|twenty four|twenty five|twenty six|twenty seven|twenty eight|twenty nine|thirty|
+a minimum|the lowest|the highest|ac|ac higher;
+<temperatureRange1>:minimum|the lowest|maximum|the highest|the max|a minimum|the minimum|low|very low|too low|
+adjusted to the highest|minimized|down|the minimum;
+<sDegrees>:degrees;
+<preWind>:increase|raise|turn up|high|turn|turn on|decrease|lower|turn down|low|
+lowest|change|make|highest|maximum|maximize|minimize|crank up|blow|adjust|
+decrease|set;
+<preWind2>:change to|set to|adjust to;
+<sWind>:fan speed|speed|fan|fans|air speed|air volume|air speed|ac air volume|ac|windscreen|
+foot|wind|air speed of ac|fan speed of ac|fan level of ac|the air speed|fan level|air level|air recirculation|level fan speed|
+the fan;
+<sWind2>:low wind|low fan|high fan|high wind|low fans;
+<windTail>:maximum|minimum|the highest|up|high|low|down|too low|lower|too high|
+the minimum|the maximum|the lowest|the max;

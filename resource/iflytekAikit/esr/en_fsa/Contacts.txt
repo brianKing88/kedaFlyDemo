@@ -1,0 +1,64 @@
+#FSA 1.0;
+0	1	<Contacts>
+0	2	<sCheck>
+0	2	-
+2	3	<Contacts>
+3	4	<sMiddle>
+4	5	<phoneType>
+4	5	-
+5	6	<sPhone>
+5	6	-
+6	1	<callContactsTail>
+6	1	-
+0	7	<preContacts>
+0	7	-
+7	8	<sCheck>
+7	8	-
+8	9	<Contacts>
+9	10	<sMiddle>
+10	11	<phoneType>
+10	11	-
+11	12	<sPhone>
+11	12	-
+12	1	<callContactsTail>
+12	1	-
+0	13	<sWant>
+13	14	<sCheck>
+13	14	-
+14	15	<Contacts>
+15	16	<sMiddle>
+16	17	<phoneType>
+17	1	<sPhone>
+;
+
+<Contacts>:contacts name|
+lucy|
+alice
+;
+
+<sWant>:i want to;
+
+<sCheck>:
+check|
+open|
+find|
+search for|
+look for;
+
+<preContacts>:
+what yps|
+show me|
+can you help me;
+
+<callContactsTail>:
+for me|
+please;
+
+<sMiddle>:yps;
+
+<phoneType>:
+telephone;
+
+<sPhone>:
+number;
+

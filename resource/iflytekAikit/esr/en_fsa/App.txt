@@ -1,0 +1,79 @@
+#FSA 1.0;
+
+0	2	<preSettings>
+2	3	<sPrep>
+2	3	-
+3	1	<sSettings>
+0	4	<preHelp>
+0	4	-
+4	5	<sThe>
+4	5	-
+5	6	<helpType>
+6	1	<helpTail>
+6	1	-
+0	7	<helpStable>
+7	1	-
+0	8	<sWant>
+0	8	-
+8	9	<sControl>
+8	9	-
+9	10	<sThe>
+9	10	-
+10	11	<applist>
+11	1	<sControl>
+11	1	-
+0	12	<sControl>
+12	13	<applist>
+13	1	<sControl>
+;
+
+<sWant>:
+i want|
+i want to|
+i wanna|
+help me|
+can|
+please|
+can you|
+i want my;
+
+<sControl>:close|turn off|shut down|exit|leave|start|turn on|open|enter|launch|off|exits|down|mute|unmute|cancel|sound|mute to;
+
+<applist>:app name|phone|navigation|navigation yps;
+
+<preSettings>:
+take me to|
+open;
+
+<sPrep>:to;
+
+<sSettings>:
+settings;
+
+<preHelp>:
+how to use|
+how can i use|
+display how to|
+use|
+instructions of|
+instructions about|
+instructions for|
+teach me how to check|
+how to open;
+
+<sThe>:
+the|
+this;
+
+<helpType>:
+help|
+help type;
+
+<helpTail>:
+function|
+system;
+
+<helpStable>:
+what can you do for me|
+what should i say|
+what can i say;

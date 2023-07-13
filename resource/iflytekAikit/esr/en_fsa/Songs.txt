@@ -1,0 +1,246 @@
+#FSA 1.0;
+0	1	-
+0	1	<sWant>
+0	2	-
+0	2	<preMusicSwitch>
+0	3	<sContinue>
+0	4	-
+0	4	<sThe>
+0	5	-
+0	5	<sWant>
+0	6	<sReplay>
+0	7	<preQ>
+0	8	-
+0	8	<sWant>
+0	9	-
+0	9	<sWant>
+0	10	-
+0	10	<sWant>
+0	11	-
+0	11	<sWant>
+0	12	-
+0	12	<qTail>
+0	13	-
+0	13	<sWant>
+0	14	<preMusicOn>
+0	15	-
+0	15	<sWant>
+0	16	-
+0	16	<sWant>
+0	17	-
+0	17	<sWant>
+0	18	<sWant>
+0	18	-
+0	22	-
+0	22	<preMusicOn>
+0	46	<sListen>
+0	95	<stableMusic>
+1	19	<sOperate>
+1	20	<sThe>
+1	20	-
+1	21	<sDelete>
+1	73	<sAdd>
+2	22	-
+3	23	<sThe>
+3	23	-
+4	24	<sMusic2>
+5	25	<prePlayMode>
+5	25	-
+6	26	<sThe>
+6	26	-
+7	95	<qTail>
+8	27	<preMusicOn>
+8	28	<preMusicSwitch>
+8	29	<prePlayMode>
+9	30	<preMusicOn>
+9	30	-
+10	31	<preMusicOn>
+10	31	-
+10	49	<preMusicSwitch>
+10	49	-
+11	32	<preMusicOn>
+11	32	-
+11	50	<preMusicSwitch>
+11	50	-
+12	33	<sThe>
+12	33	-
+13	34	<sThe>
+13	34	-
+14	35	<musicType>
+15	36	<preMusicSwitch>
+15	37	<sThe>
+15	37	-
+15	53	<preMusicOn>
+15	53	-
+16	38	<preMusicOn>
+16	55	<preMusicSwitch>
+17	39	<preMusicOn>
+17	56	<preMusicSwitch>
+18	40	-
+18	40	<preMusicOn>
+18	57	-
+18	57	<preMusicSwitch>
+19	41	<sThe>
+19	41	-
+20	42	<sMusic>
+20	42	-
+21	43	<sThe>
+22	44	<sThe>
+22	44	-
+23	95	<sMusic2>
+24	95	<sContinue>
+25	45	<playMode>
+26	46	<sMusic>
+26	46	-
+27	47	-
+28	47	-
+29	47	-
+30	48	<Singer>
+31	49	-
+32	50	-
+33	51	<sMusic>
+33	51	-
+34	52	<sMusic>
+34	52	-
+35	95	<sMusic>
+35	95	-
+36	53	-
+37	54	<sMusic>
+38	55	-
+39	56	-
+40	57	-
+41	58	<sMusic>
+41	58	-
+42	59	<sPrep>
+42	59	-
+43	60	<sMusic>
+43	60	-
+44	61	<sNext>
+45	95	<sPlease>
+45	95	-
+46	95	<replayTail>
+46	95	-
+47	95	<Songs>
+48	62	<sYps>
+49	63	<Songs>
+50	64	<Singer>
+51	65	<sName>
+52	66	<Songs>
+53	67	<sThe>
+53	67	-
+54	68	<preMusicOn>
+54	68	-
+55	69	<sThe>
+55	69	-
+56	70	<Singer>
+57	71	<Songs>
+57	72	<Singer>
+58	73	<sPrep>
+58	73	-
+59	74	<preCollection>
+59	74	-
+60	75	<sPrep>
+60	75	-
+61	76	<sMusic2>
+62	95	<sMusic>
+63	77	<ssMiddle>
+64	78	<sYps>
+65	95	<Songs>
+66	79	<ssMiddle>
+66	79	-
+67	80	<sMusic>
+68	95	<sPlease>
+68	95	-
+69	81	<sMusic>
+69	81	-
+70	95	<sPlease>
+70	95	-
+71	82	<ssMiddle>
+72	83	<sYps>
+73	84	<preCollection>
+73	84	-
+74	85	<sCollection>
+75	86	<preCollection>
+75	86	-
+76	95	<sPlease>
+76	95	-
+77	87	<Singer>
+78	95	<Songs>
+79	95	<Singer>
+80	88	<sPrep>
+80	88	-
+80	95	<sPlease>
+80	95	-
+81	89	<Songs>
+82	90	<Singer>
+83	91	-
+83	91	<sMusic>
+84	92	<sCollection>
+84	92	-
+85	95	<sPlease>
+85	95	-
+86	93	<sCollection>
+86	93	-
+87	95	<sFor>
+87	95	-
+88	95	<mediaSource>
+88	95	-
+89	95	<sPlease>
+89	95	-
+90	95	-
+90	95	<sPlease>
+91	94	<Songs>
+92	95	<sPlease>
+92	95	-
+93	95	<sPlease>
+93	95	-
+94	95	-
+94	95	<sPlease>
+;
+<stableMusic>:next|track down|another|play|go on|next up|a song|continuous playback|last track|stop the music|
+give me music on bluetooth|play genre rock and roll|play genre jazz|play genre pop music|add to my favourite|add the music to my favourites|delete the song from my favourites|show collected songs|i want to play collection music|i want to listen to the collected songs|
+switch to previous song|make it to single loop|repeat song|repeat all|play songs in a randomized order|i love this song very much|play genre pop music|find music from ipod|play music from ipod|i wanna listen hey jude|
+play bruno mars yps song|listen to taylor swift yps song|i wanna listen to maroon five yps song|listen to lady gaga yps latest song|i wanna listen to lady gaga yps latest album|give me lady gaga yps latest album|i want to listen to adele yps remedy|put in favourite songs|can you help me collect this song|remove this song from favourites|
+give me some music from collection list|track up|pause play|sequential loop|play songs sequentially|make it to sequential loop|loop playback|i wanna ring one one four|loop playlist|play repeatedly|
+make it to loop playback|play songs in randomized order|play playlist on shuffle|i wanna listen to music|i wanna listen to music on usb|i want to listen to maroon five yps song|save this song to favourite|remove this song from my favourites|remove this song from favourite|i wanna some songs from favourites|
+continue playing|help me make a call to maria|album thriller by michael jackson;
+<preQ>:who sings|whose song|which song|what song|what is the name of|what yps;
+<qTail>:is this|is there|is playing|is being played now|this song playing|the song yps name|this song;
+<sWant>:i want to|i wanna|i would like to|give me|show me|can you give me|please|let yps|help me|can you help me|
+i ypd like to|make it to|give me;
+<preMusicOn>:turn on|listen to|play|get|have|exit|off|turn off|come|close|
+shut down|give me|put on|hear|stop playing|stop;
+<preMusicSwitch>:switch to|search for|search|find|look for|track down|change|make it to;
+<sThe>:some|the|this|a;
+<musicType>:genre pop|genre jazz|genre rock and roll;
+<sMusic>:music|song|songs|it|gaana|latest song|song lyrics|lyrics|collected songs|the collected songs|
+programs;
+<sPlease>:please;
+<sPrep>:from|on|in|to|into|all;
+<mediaSource>:usb|ipod|bluetooth;
+<Songs>:song name|hotel california|hey jude|beautiful world|lights|hello|you are not alone|we are the world|love story|remedy|
+take me to your heart|album thriller|album singles|get sexy|swear it again|genre rock and roll;
+<Singer>:singer name|taylor swift|lady gaga|maroon five|westlife|ellie goulding|adele|michael jackson|the beatles|sugababes;
+<sYps>:yps;
+<ssMiddle>:by|from|of;
+<sOperate>:Save|favourite|collect|put|view|display|loop|play|hide|close|
+open|show|turn off|check|closing|turn on|read|opening|add;
+<sAdd>:add to|add the music to|add the song to;
+<preCollection>:my;
+<sCollection>:collection|collection list|favourite|favourite list|favourites|favourite song|favourite songs|favourite soundtrack|playlist|music list|
+song list;
+<sDelete>:delete|remove|uncollect;
+<sNext>:next|new|another|other|previous|last|first;
+<sMusic2>:music|song|songs|one|track|soundtrack|play|playing;
+<sContinue>:continue|resume|stop|pause|suspend|suspended|continuous;
+<prePlayMode>:switch to|change to|make it to|set play mode|set play mode as|play song|play songs|play music|play the song|play a song|
+play the music|play a music|open|turn on|play the playlist|make it|play|put the song|keep the song;
+<playMode>:in sequence|sequentially|continuously|in order|sequential loop|loop all|single loop|single cycle|on loop|on repeat|
+loop playback|in a loop|repeat play|loop playlist|loop|repeat|random play|in a randomized order|on shuffle|shuffle play|
+shuffle play|shuffle songs|shuffle playback|loop|loop playback|repeatedly|in a loop|in a randomized order|shuffle|continuous play|
+going repeat|repeatly|randomly|sequentially;
+<sReplay>:replay|play|listen to|loop;
+<sListen>:listen;
+<replayTail>:one more time|once more|again;
+<sFor>:for me;
+<sName>:called;

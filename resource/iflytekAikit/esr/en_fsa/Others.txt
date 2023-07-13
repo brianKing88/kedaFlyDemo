@@ -1,0 +1,164 @@
+#FSA 1.0;
+0	1	<menuSwitch>
+0	2	-
+0	2	<sWant>
+0	3	-
+0	3	<sWant>
+0	4	-
+0	4	<sWant2>
+0	5	<sVolume>
+0	6	-
+0	6	<sWant>
+0	7	-
+0	7	<sWant>
+0	8	<sSetting>
+0	9	-
+0	9	<sWant1>
+0	10	-
+0	10	<sThe>
+0	11	<sTomorrow1>
+0	12	<adjustVolume>
+0	13	<sWant>
+0	13	-
+0	53	<stable>
+1	14	<sMenu>
+2	15	<screenControl>
+2	15	-
+3	16	<adjustScreen>
+3	16	-
+4	17	<adjustVolume>
+4	17	-
+5	18	<adjustVolume>
+6	19	<adjustVolume>
+6	19	-
+7	20	<sControl>
+8	21	<sControl>
+9	22	<sThe>
+9	22	-
+10	23	<sWeather>
+11	24	<sWeather>
+12	25	<sThe>
+13	26	-
+13	26	<menuOn>
+14	53	<menuTail>
+15	27	<sThe>
+15	27	-
+16	28	<sThe>
+16	28	-
+17	29	<sThe>
+17	29	-
+18	53	<volumeRange>
+18	53	-
+19	30	<sThe>
+19	30	-
+20	31	<sThe>
+20	31	-
+21	53	<sPlease>
+21	53	-
+22	32	<sWeather>
+23	53	<sTomorrow>
+24	33	<sPrep1>
+25	53	<sVolume>
+26	34	-
+26	34	<sThe>
+27	35	<sScreen>
+28	36	<sScreen>
+28	36	-
+29	37	<sVolume>
+30	38	<sVolume>
+31	39	<sSetting>
+32	40	<sPrep1>
+33	53	<sCity>
+34	41	<sMenu>
+35	42	<screenControl>
+35	42	-
+36	43	<sPrep>
+36	43	-
+37	44	<sPrep2>
+37	44	-
+38	45	<sPrep>
+38	45	-
+39	53	<sPlease>
+39	53	-
+40	46	<sCity>
+41	47	-
+41	47	<menuTail>
+42	48	<screenTail>
+42	48	-
+43	49	<brightLevel>
+44	50	<preVolumeDegree>
+44	50	-
+45	51	<volumeRange>
+45	51	-
+46	53	<sTomorrow>
+46	53	-
+47	53	-
+47	53	<sPlease>
+48	53	-
+48	53	<sPlease>
+49	53	-
+49	53	<brightLevelTail>
+50	52	<volumeDegree>
+51	53	-
+51	53	<sPlease>
+52	53	-
+52	53	<preVolumeDegree>
+;
+<stable>:back to menu|help|louder|keep quiet|unmute|turn|go back|return|close|quit|
+shut off|exit|be louder|speak louder|darker|home page|way to the nearest supermarket|can you drive me to the nearby parking lot|i want to find a hospital around|i wanna find a park nearby|
+navigate to the surrounding hospital|is there a gas station near the destination|how do i get to supermarket near destination|search the shopping malls around the company|search the supermarket near home|food near apple|foods near apple|good food near orchard road|i want hot pot|is there a buffet|
+find steak|i want ice cream|the youth restaurant near the plaza mayor|is there any pizza hut near harvard university|starbucks next to ohio university|restaurants around anhui university|is there any pizza hut around harvard university|is there any food near harvard university|chinese restaurant near time square|is there a cafe around new york university|
+barbecue around ohio university|i ypm hungry|i want to eat|i want to have some food|i ypm starving|find nearest restaurant|help me search hotels around|is there any hotels near here|find nearby hotel|hotels around here|
+inn at current location|find nearest hotel|i want to search the hotels near apple|hotels around oxford university|help me search the hotels near newark|i want to search for hotels near apple|i want to search for hotels around apple|hotels near oxford university|help me search hotels near newark|help me find hotels near newark|
+help me look for hotels near newark|help me search hotels around newark|help me find hotels around newark|help me look for hotels around newark|search hilton hotels around|is there a marriott hotel nearby|look for grand hyatt hotel nearby|read out hilton hotels at current location|i want to book a room|i want to book a hotel|
+i want to find a place to sleep|a place to rest at current location|see weather|what yps the weather forecast like in shanghai on tuesday|what yps the weather in shanghai|what yps the weather in shanghai tomorrow|current weather|how yps the weather today|weather for shanghai tomorrow|how yps the weather in shanghai tomorrow|
+how about the weather in shanghai tomorrow|how is beijing weather in the day after tomorrow|weather in shanghai tomorrow|and tomorrow|tomorrow yps weather in beijing|weather in beijing|search cafe around the destination|see the temperature in shanghai|show the weather news in beijing|display the weather news in beijing|
+i wanna get sexy by sugababes|how about weather of beijing|good food nearby|the weather today|low beam on|high beam on|return to main menu|see the weather|close wifi spot|watch the next|
+make the scale bigger|need umbrella or not|is umbrella needed|where to eat around boston university|it there buffet|where to have hamburgers|turn on ac on driver side|is there cafe around new york university|raise air volume to highest|sunroof open|
+sunroof close|can window of driving side be open|i want window of driver  side open|i want to open window of driver side|open window of driver side|open passenger yps window|i want to close window of driver side|i want window of driver side closed|can window of driver side be closed|startup settings|
+can you startup system settings for me|back to main menu|return to homepage|lighten|increase brightness|i want my screen lighter|dim screen|turn my brightness down little bit|i want maximum brightness|louder voice|
+turn sound down bit|disable mute|add sound to eighteen|keep your voice to minimum|check for four seasons hotel around here|help me unmute navigation|unmute navigation|turn up media volume|navi volume up|turn down media volume|
+turn down navigation volume|turn voice volume up to highest|turn voice volume down to lowest|voice volume minimum|startup gps|start music|startup voice settings|what to eat near oxford university|where to sleep|weather of tomorrow|
+what yps weather like in beijing tomorrow|weather condition in bejing  on tuesday|fourth|pass|call off|i am sure|how yps weather today|what yps weather in shanghai|what yps weather in shanghai tomorrow|go back to home|
+drive back to home|navigate to home|go to home|i wanna go to home|i wanna go back to home|add music to my favourites|i am bit cold|i ypm bit cold|i am so cold|lower down temperature|
+set temperature of ac lower|i am little hot|i ypm bit hot|i am so hot|tune to twenty three degrees|i want to have some food|turn off windows|can you open sunshade for me|shut sunshade|can you open trunk for me|boot close|i want window of driver yps side open|open window on drive side|help me open window of driver yps side|open window on drive side|can window of front passenger side be open|open passenger yps window|i want to close window of driver yps side|close window on drive side|can window of front passenger side be closed|i want to close window of front passenger side|open settings please|startup settings|i want to open system settings|can you startup system settings for me|i want to close system settings|return to homepage|light up screen|i want my screen lighter|food near apple|i want my screen darker|raise brightness to maximum|adjust screen brightness to maximum level|i want maximum brightness|little louder|turn sound down bit|turn down voice|turn volume to twenty three|add sound to eighteen|add sound to eighteen|maximize volume|is there marriott hotel nearby|mute route guidance|unmute phone|help me unmute navigation|unmute navigation|cancel navigation yps mute|turn up phone volume|phone volume down|turn down phone volume|turn up navigation volume to highest|turn voice volume up to highest|i want to book hotel|startup gps|start music|i want to find place to sleep|startup voice settings|i want to turn off voice settings|weather of tomorrow|tomorrow is cloudy or not|show weather news in beijing|weather condition in bejing on tuesday|tell me weather in beijing on tuesday|fourth line|fifth line|final one|i want to turn on ac|page two|page five|page six|select page three|play it again|turn off ac|i want to turn off ac|how yps weather in shanghai|how about weather of beijing|how about that of beijing|how yps weather in shanghai tomorrow|what about beijing weather of day after tomorrow|drive back to home|i wanna go to home|louder sound|add song to my favourite list|foods around apple|foods near apple|i am bit cold|search good restaurants near great lakes|i ypm freezing to death|i am frozen|search good restaurants around great lakes|temperature is too low|cool down|good food near orchard road|set temperature of ac lower|where to eat around boston university|temperature is too high|heat is killing me|really hot here|it yps too hot|it there buffet|tune to twenty three degrees|turn up temperature by five degrees|air conditioning temperature lowered by three degrees|temperature lowered by one degree|turn on ac for driving seat|turn on ac on driving side|turn on ac on passenger side|turn on front passenger seat ac|turn on ac for front passenger seat|i want ac automatic mode|switch on fresh air mode|fresh air mode on|turn on air conditioner heating mode|open air conditioner heating mode|give me air conditioner heating mode|ac cooling mode|air conditioner cooling mode|open inner loop|turn off automatic close automatic mode|set ac auto off|blow_windscreen|blow_windscreen_foot|defrost_on|defrost_off|air conditioning temperature adjusted to lowest|air conditioner coolest|air conditioner hottest|air volume up|turn up air volume|set to high fan|turn up fan|fan speed is too low|air volume down|turn down air volume|set to low wind|change to low wind|make fan speed lower|set air speed of ac to two|increase fan speed to three|decrease fan speed to three|is there cafe around new york university|air speed to three|fan speed three|set fan to three|lower air volume to lowest|minimize air speed|lower ac air volume to minimum|bbq around ohio university|show odometer|car overall condition check|show me car information|i want to eat|i want to open windows|i want to have some food|i want to close car windows|close car sunshade|turn off car sunshade|i want to close car sunshade|can you close car sunshade for me|i want to open atmosphere lamp|switch off atmosphere lamp|find nearest restaurant|open trunk|close trunk|turn off trunk|i want to close trunk|boot close|is there some hotels nearby|i want to open window of driver side|open passenger yps window|i want to close window of driver yps side|close window of driver side|hotels around here|close passenger yps window|switch on fog lights|high beam on|startup settings|can you startup system settings for me|take me to settings|i want to search hotels near apple|return to homepage|turn my brightness up little bit|food near apple|i want to search for hotels near apple|turn screen darker|turn my brightness down|i want to search for hotels around apple|turn my brightness down little|set screen brightness to maximum level|dim screen below minimum brightness level|least brightness|minimum level of brightness|decrease brightness to minimum|set screen brightness to minimum level|adjust screen brightness to minimum level|little louder|turn on mute|set yourself on mute|mute yourself|turn off mute|adjust volume to twenty three|turn volume to twenty four|i want to turn volume up to maximum|keep your voice to maximum|keep your voice maximized|is there marriott hotel nearby|turn volume to minimum|keep your voice to minimum|volume to minimum|turn off bluetooth|disconnect wifi|open wifi spot|close wifi spot|off wifi spot|unmute navigation|turn up media volume|turn up phone volume|turn down media volume|turn down navigation volume|phone volume down|voice volume maximum|turn voice volume down to lowest|i want to turn media volume down to lowest|turn down media volume to lowest|i want to book hotel|startup gps|start music|turn off navigation|i want to find place to sleep|startup voice settings|activate voice settings|i want to turn off voice settings|see weather|current weather|is umbrella needed|find places to rest|weather in city of shanghai|what yps weather like in beijing tomorrow|tomorrow yps weather in beijing|weather condition in bejing on tuesday|fifth|choose sixth|third row|fifth line|i want to turn on ac|shut off|not this|turn back|go back|i want to turn off ac|i am sure|how yps weather today|navigate to home|switch off air conditioner|add song to my favourite list|put song into my favourite list|foods around apple|temperature up;
+<sWant1>:what about|how yps|display|how is|how about|check|see|show|display;
+<sWeather>:weather|weather news|weather condition|temperature;
+<sPrep1>:in the city of|in|for|is|of;
+<sCity>:shanghai|beijing|too cold|too hot;
+<sTomorrow>:tomorrow|on tuesday|today;
+<sTomorrow1>:tomorrow yps;
+<sControl>:open|connect|switch on|turn on|turn off|disconnect|close|off|start up|enter|
+activate|launch|shut down|exit|leave|turn down|switch to|activate;
+<sSetting>:bluetooth|wifi|wifi spot|voice settings|the voice settings|voice setting|settings|setting|music;
+<volumeRange>:zero|one|two|three|four|five|six|seven|eight|nine|
+ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|
+twenty|twenty one|twenty two|twenty three|twenty four|twenty five|twenty six|twenty seven|twenty eight|twenty nine|
+thirty|thirty one|thirty two;
+<adjustVolume>:turn up|turn|keep|lower|smaller|turn down|turn on|activate|set on|open|
+enable|off|add|set|deactivate|disable|turn off|off|shut down|keep|
+maximize|adjust|minimize|turned to|no|mute|unmute|make|turn down;
+<sVolume>:your voice|voice|the volume|volume|sound|sounds|it|speak|mute|sounds|
+mute off|media volume|navigation volume|music|media|phone volume|phone|route guidance|navigation|voice volume|
+navigation sound|navi volume|ac;
+<preVolumeDegree>:a little bit|a bit|to|at|a little;
+<volumeDegree>:louder|down|down a bit|full volume|the max|the minimum|the lowest|a minimum|the maximum|minimum|
+up|the highest|maximum|lower|the max;
+<sPrep>:to|below|up to|at|on|up|down|off|turned to;
+<sPrep2>:to|below|up to|at|on|up|down to|off|turned to;
+<adjustScreen>:adjust|change|set|switch|raise|make|turn|set on|reduce;
+<brightLevel>:full brightness|maximum|minimum|the lowest|the highest|top brightness;
+<brightLevelTail>:level|mode|brightness;
+<screenControl>:brighten|light up|light|lighter|up|on|make|turn|increase|lighten|
+darken|dim|darker|lower|down;
+<sThe>:the|my|your;
+<sScreen>:screen|brightness|be|screen brightness;
+<screenTail>:a little|a little bit|darker|dimmer|brighter|lighter|to minimum|to minimum level;
+<sWant>:i want|i want to|i wanna|help me|can|please|can you|i want my;
+<sWant2>:i want to|i wanna|help me|can|please|can you|i want my;
+<menuOn>:open|turn on|start|start up|activate|switch to|take me to|launch|close|turn off|
+shut down|exit|leave|move to|return to|back to|change to|go back to|jump to;
+<sMenu>:settings|setup menu|system settings|home page|main menu|main interface|main page|home page;
+<menuTail>:for me;
+<sPlease>:please;
+<menuSwitch>:return to|back to|go back to|switch to|take me to|move to|change to|jump to;

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">AIKit Demo</string>
+    <string name="aisound_title">轻量级离线语音合成(aisound)</string>
+    <string name="xtts_title">离线语音合成(xtts)</string>
+    <string name="tts_content">科大讯飞作为中国最大的智能语音技术提供商，在智能语音技术领域有着长期的研究积累，并在中文语音合成、语音识别、口语评测等多项技术上拥有国际领先的成果。科大讯飞是我国唯一以语音技术为产业化方向的“国家863计划成果产业化基地”、“国家规划布局内重点软件企业”、“国家火炬计划重点高新技术企业”、“国家高技术产业化示范工程”，并被信息产业部确定为中文语音交互技术标准工作组组长单位，牵头制定中文语音技术标准。2003年，科大讯飞获迄今中国语音产业唯一的“国家科技进步奖（二等）”，2005年获中国信息产业自主创新最高荣誉“信息产业重大技术发明奖”。2006年至2011年，连续六届英文语音合成国际大赛（Blizzard Challenge ）荣获第一名。2008年获国际说话人识别评测大赛（美国国家标准技术研究院—NIST 2008）桂冠，2009年获得国际语种识别评测大赛（NIST 2009）高难度混淆方言测试指标冠军、通用测试指标亚军。</string>
+    <!--    <string name="tts_content">锁Lock分为公平锁和非公平锁，公平锁表示线程获取锁的顺序是按照线程加锁的顺序来分配的，即先来先得先进先出的顺序。而非公平锁就是一种获取锁的抢占机制，是随机获得锁的，和公平锁不一样的就是先来的不一定先得到锁，这会造成某些线程一直拿不到锁，出现饥饿现象</string>-->
+    <string name="tts_content_en">As the largest intelligent voice technology provider in China, iFLYTEK has accumulated long-term research in the field of intelligent voice technology, and has international leading achievements in Chinese speech synthesis, speech recognition, spoken language evaluation and other technologies.</string>
+    <string name="ivw_title">IVW唤醒</string>
+    <string name="egdeesr_title">离线语音识别(多语种)</string>
+    <string name="egdeesr_cnen_title">离线语音识别(中英文)</string>
+    <string name="esr_title">ESR命令词</string>
+    <string name="wms_demo_title">WMS_DEMO</string>
+
+
+    <!--xtts发音人-->
+    <string-array name="xtts_vcn">
+        <item>xiaoyan</item>
+        <item>xiaofeng</item>
+    </string-array>
+
+    <!--aisound发音人-->
+    <string-array name="aisound_vcn">
+        <item>xiaoyan</item>
+        <item>xiaofeng</item>
+        <!--        <item>catherine</item>-->
+    </string-array>
+
+    <!--aisound发音人文本-->
+    <string-array name="aisound_text_array">
+        <item>@string/tts_content</item>
+        <item>@string/tts_content_en</item>
+    </string-array>
+
+    <!-- Messages Preferences -->
+    <string name="vadlinkon_title">句子连接</string>
+    <string name="vadlinkon_desc">默认开启，引擎自动切分识别语句且将子句之间上下文相关联</string>
+
+    <!--语音识别中英文选择-->
+    <string-array name="ed_cnen_language">
+        <item>中文</item>
+        <item>英文</item>
+    </string-array>
+
+    <!--语音识别多语种选择-->
+    <!--    0:中英, 20:日语, -->
+    <!--    21:韩语, 22:俄语,-->
+    <!--    23:法语, 24:西班牙语, -->
+    <!--    25:德语, 27:泰语, -->
+    <!--    28:阿拉伯语, 50:维吾尔语,-->
+    <!--    51:藏语, 26:越南语-->
+    <string-array name="ed_multi_language">
+        <item>中文-0</item>
+        <item>英文-0</item>
+        <item>德语-25</item>
+        <item>西班牙语-24</item>
+        <item>法语-23</item>
+        <item>日语-20</item>
+        <item>韩语-21</item>
+        <item>俄语-22</item>
+    </string-array>
+
+    <!--命令词语种选择-->
+    <string-array name="esr_language">
+        <item>中文-0</item>
+        <item>英文-1</item>
+    </string-array>
+
+</resources>

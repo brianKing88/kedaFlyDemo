@@ -1,0 +1,32 @@
+#FSA 1.0;
+0	2	<sWant>
+0	2	-
+2	3	<answerCall>
+3	4	<sThe>
+4	1	<sPhone>
+0	5	<sWant>
+0	5	-
+5	1	<answerCall2>
+;
+
+<sWant>:
+help me|
+can you;
+
+<answerCall>:
+pick|
+answer|
+hang up|
+hung up;
+
+<answerCall2>:
+ring off|
+hang up|
+hung up;
+
+<sThe>:the;
+
+<sPhone>:
+phone|
+call|
+telephone;

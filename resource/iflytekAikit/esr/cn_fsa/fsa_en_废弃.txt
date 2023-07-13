@@ -1,0 +1,64 @@
+#FSA 1.0;
+0	1	-
+0	1	<meet1>
+0	2	<call1>
+0	2	-
+0	3	<site1>
+0	4	<cont1>
+0	4	-
+0	5	<share1>
+0	6	<vol1>
+0	6	-
+0	7	<vol1>
+0	8	<mute1>
+0	9	<diag1>
+0	9	-
+0	10	<prepage1>
+0	11	<nextpage1>
+1	12	<meet2>
+2	13	<call2>
+3	14	<site2>
+4	15	<cont2>
+5	16	<share2>
+6	17	<vol2>
+7	18	<vol2>
+8	19	<mute2>
+9	20	<diag2>
+11	21	<nextpage2>
+12	22	<meet3>
+13	23	<call3>
+14	24	<site3>
+17	25	<vol3>
+17	25	-
+22	26	-
+22	26	<meet4>
+23	27	-
+23	27	<call4>
+;
+<meet1>:I want to;
+<meet2>:join|attend|extend|end|close|exit;
+<meet3>:meeting|the meting;
+<meet4>:by 30 minutes|now;
+<call2>:call;
+<call3>:John|Smith|Charles;
+<call1>:I need to;
+<call4>:to the conference;
+<site1>:View|Switch to|I want to view;
+<site2>:site;
+<site3>:Birmingham|Conference room 1|Oracle;
+<cont1>:Watch|View;
+<cont2>:continuous presence;
+<share1>:Share|View;
+<share2>:PPT|presentation;
+<vol1>:Turn|Turn up|Turn down;
+<vol2>:volume;
+<vol3>:up|down|is too high;
+<item1>:First|Second|Third;
+<item2>:one|item;
+<mute1>:Mute|Unmute;
+<mute2>:site|all sites|a site;
+<diag1>:Start|Start system;
+<diag2>:Diagnose|diagnostics;
+<prepage1>:Previous page|Back to previous page|Go back;
+<nextpage1>:Show;
+<nextpage2>:next page|next slide|next;

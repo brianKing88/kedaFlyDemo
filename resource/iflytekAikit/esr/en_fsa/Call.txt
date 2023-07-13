@@ -1,0 +1,162 @@
+#FSA 1.0;
+0	1	<sCheck>
+0	2	-
+0	2	<sWant>
+0	3	-
+0	3	<sWant>
+0	4	-
+0	4	<sPlease>
+0	5	-
+0	5	<sWant>
+0	6	<preCallContacts2>
+0	7	-
+0	7	<sWant>
+0	8	<sCheck>
+0	9	-
+0	9	<sWant>
+0	10	-
+0	10	<preCallContacts2>
+0	11	-
+0	11	<sWant>
+0	12	-
+0	12	<sWant>
+0	13	-
+0	13	<sWant>
+0	14	<sRedial>
+0	15	<sCallBack>
+0	64	<callStable>
+1	16	<sThe>
+2	17	<sCheck>
+3	18	<checkPhoneType>
+4	19	<preCallContacts>
+5	20	<preCallPhoneType>
+5	20	-
+6	64	<Contacts>
+7	21	<preCall>
+8	22	<teleRecords>
+9	23	<preCallContacts>
+10	24	<Contacts>
+11	25	<preCallNum>
+12	26	<preCallPhoneType>
+13	27	<preCallContacts>
+13	27	-
+14	28	<redialObj>
+14	28	-
+15	29	<redialObj>
+16	30	<teleRecords>
+17	31	<sRecords>
+17	31	-
+18	32	<Contacts>
+19	33	<Contacts>
+19	64	<recordTail>
+19	64	-
+20	34	<Contacts>
+21	35	<sThe>
+21	35	-
+22	64	<sInfo>
+22	64	-
+23	36	<Contacts>
+24	37	<sMiddle>
+25	38	<preNum>
+25	38	-
+26	39	<Contacts>
+27	40	<Contacts>
+28	64	<redialObjTail>
+28	64	-
+29	64	<sBack>
+30	64	-
+30	64	<sInfo>
+31	41	<Contacts>
+31	64	-
+31	64	<recordTail>
+32	42	<sMiddle>
+33	64	-
+33	64	<sPlease>
+34	43	<sMiddle>
+35	64	<sCall>
+36	64	-
+36	64	<callNumTail>
+37	44	-
+37	44	<callContactsTail>
+38	45	<phoneNumber>
+39	46	<sMiddle>
+40	47	<sMiddle>
+41	64	-
+41	64	<sPlease>
+42	48	-
+42	48	<phoneType>
+43	49	-
+43	49	<phoneType>
+44	64	<callContactsTail>
+45	50	<phoneNumber>
+46	51	<phoneType>
+47	52	<sNumber>
+48	53	-
+48	53	<phoneTypeTail>
+49	64	-
+49	64	<sPhone>
+50	54	<phoneNumber>
+51	64	-
+51	64	<sPhone>
+52	55	<preNumSeg>
+53	64	-
+53	64	<sPlease>
+54	56	-
+54	56	<phoneNumber>
+55	64	<numberSegment>
+56	57	-
+56	57	<phoneNumber>
+57	58	-
+57	58	<phoneNumber>
+58	59	-
+58	59	<phoneNumber>
+59	60	-
+59	60	<phoneNumber>
+60	61	-
+60	61	<phoneNumber>
+61	62	-
+61	62	<phoneNumber>
+62	63	-
+62	63	<phoneNumber>
+63	64	-
+63	64	<callNumTail>
+;
+<callStable>:phone|phone call|call|dial|ring|redial|recall|pick up|block|reject|
+i wanna call|i wanna dial|dial a number|dial a phone number|i wanna dial a number|i wanna dial a phone number|help me make a call to one zero zero eight six|call by number|i ypd like to phone the number one zero zero eight six|i wanna call lily yps mobile phone|
+i wanna call lily yps work phone|i want to call lily yps mobile phone|call lily yps work phone|answer the phone|end the phone call|redial the last number that has not been picked up|call back the last person that called me|show me call records information|check for received calls  information|look up received calls information|
+view  received calls information|give jack call|help me make call to maria|make call to neha|can you call one zero zero eight six for me|redial number|redial last number that i called|redial last number that has not been picked up|dial back last incoming call|i wanna phone|
+check for call records|check for call records information|i want to check rose yps telephone number|look for alice yps telephone for me|help me make call to one zero zero eight six|i ypd like to phone number one zero zero eight six|i wanna call lily yps home phone|call richard yps home number|contact lily on her home number|resume playing|
+pick up telephone|check the call history|check call history|dial back the last incoming call|check for received calls|check for received calls information|i want to check rose's telephone number;
+<sWant>:i would like to|i wanna|i want to|help me|can you|i ypd like to|can you help me|what yps;
+<preCall>:make|pick up|hung up|reject|block;
+<sThe>:a|the;
+<sCall>:call|phone call|telephone call|the telephone|phone;
+<Contacts>:contacts name;
+<preCallContacts>:call|call by|ring|dial|phone|make a call to|make a phone call to|please call|contact with;
+<preCallContacts2>:give|call|can you call|dial|ring|open|what yps|look for;
+<callContactsTail>:for me|please|a call|number|number please|telephone;
+<preCallNum>:ring|dial|make a call to|call|call to;
+<preNum>:the number|this number|number;
+<phoneNumber>:zero|one|two|three|four|five|six|seven|eight|nine;
+<callNumTail>:for me|up|please;
+<phoneType>:home|mobile|office|telephone;
+<preCallPhoneType>:call|calling|help me call|make a call to|dial|ring|contact|telephone|phone|contact;
+<sMiddle>:yps|on her|on his;
+<sNumber>:number;
+<numberSegment>:one one one|one eight nine|one three eight|one seven three;
+<preNumSeg>:starting with|beginning with;
+<sPhone>:number|phone;
+<sRedial>:dial|redial|recall|call back|ring back|dial back|ring;
+<redialObj>:it|the number|the last number|the last received call|the last called number|the last call|the last person|last incoming cll;
+<redialObjTail>:called|that i made|that i called|that has not been picked up|from the latest memory|that called me;
+<sCallBack>:call|ring|dial;
+<sBack>:back;
+<sCheck>:check|check for|view|display|open|show me|look up|pass|download|import|
+back up|sync|update|show;
+<teleRecords>:missed calls|received calls|recent calls|call history|call records|phone call history|phone history|address book;
+<sInfo>:information|list;
+<sRecords>:contacts|address book|phone book|the list of contacts|the contacts|my contacts|my contacts list|the telephone history;
+<recordTail>:to the car;
+<checkPhoneType>:look for|check|show me|let me know|search for|tell me|find;
+<phoneTypeTail>:telephone number|phone number|number|telephone|phone;
+<sPlease>:help me|please;

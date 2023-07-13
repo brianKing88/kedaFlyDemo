@@ -1,0 +1,91 @@
+#FSA 1.0;
+0	2	<sWant>
+0	2	-
+2	3	<sChoose>
+2	3	-
+3	4	<object>
+3	4	-
+4	9	<sThe>
+4	9	-
+9	5	<selectOrder>
+5	6	<object>
+5	6	-
+6	1	<sPlease>
+6	1	-
+0	7	<object>
+7	12	<selectOrder>
+12	1	<orderTail>
+12	1	-
+0	1	<stable>
+0	8	<sChoose>
+0	8	-
+8	10	<object>
+10	1	<sNumber>
+0	11	<object>
+11	1	<switchObject>
+0	13	<sChoose>
+13	14	<sThe>
+14	1	<selectOrder>
+0	15	<selectOrder>
+15	1	<object>
+;
+
+
+<stable>:
+first|
+continue|
+suspend|
+okay|
+correct|
+correction;
+
+<switchObject>:turning|down|up;
+
+<sWant>:
+i want|
+i wanna|
+show me;
+
+<sThe>:the;
+
+<sChoose>:
+go to|
+choose|
+select|
+turn to|
+switch to|
+forward to|
+show|
+take me to;
+
+<orderTail>:row;
+
+<sNumber>:one|two|three|four|five|six|seven|eight|nine|ten;
+
+<selectOrder>:
+first|
+last|
+final|
+previous|
+next|
+one|
+two|
+three|
+four|
+five|
+second|
+third|
+fourth|
+fifth|
+sixth;
+
+<object>:
+page|
+one|
+line|
+song|
+soundtrack|
+play|
+listen to;
+
+<sPlease>:please;

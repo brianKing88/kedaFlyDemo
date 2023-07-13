@@ -1,0 +1,29 @@
+#FSA 1.0;
+0	1	<playlistwant>
+0	1	-
+1	2	<playlistpre>
+2	3	<playlist>
+;
+
+<playlistwant>:
+我想|
+我要|
+我想要|
+我想听|
+我要听|
+我想要听|
+请|
+帮我|
+请帮我|
+给我|
+请给我;
+
+<playlistpre>:
+播放播放列表|
+播放列表|
+播放歌单|
+歌单|
+列表;
+
+<playlist>:
+某播放列表;
