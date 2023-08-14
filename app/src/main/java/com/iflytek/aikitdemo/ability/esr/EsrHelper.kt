@@ -147,7 +147,7 @@ class EsrHelper(
         ret = AiHelper.getInst().specifyDataSet(
             AbilityConstant.ESR_ID,
             "FSA",
-            intArrayOf(0, 1, 3)
+            intArrayOf(0)
         )
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "open esr specifyDataSet error code ===> $ret")

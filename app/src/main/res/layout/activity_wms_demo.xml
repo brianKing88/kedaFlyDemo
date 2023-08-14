@@ -46,14 +46,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="合成播放" />
+            android:text="到达库位" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnAudioFile"
+            android:id="@+id/btnTTS1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:text="音频流识别" />
+            android:text="二次确认" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

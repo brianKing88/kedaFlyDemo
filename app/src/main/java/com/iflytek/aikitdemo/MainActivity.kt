@@ -38,6 +38,7 @@ class MainActivity : BaseActivity() {
                 }
             }.toTypedArray()
         )
+        // 设备的Android版本为R或更高时，会检查是否有"管理所有文件的访问权限"。这是因为从Android 11开始，应用需要特殊的权限才能访问外部存储的全部文件。如果没有这个权限，代码会启动一个意图（Intent）来打开设置页面，让用户手动授予权限。
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             if (!Environment.isExternalStorageManager()) {
                 val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)

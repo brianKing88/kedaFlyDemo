@@ -18,7 +18,8 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.button.MaterialButton
 import com.iflytek.aikitdemo.MyApp
 import com.iflytek.aikitdemo.R
-import com.iflytek.aikitdemo.ability.AbilityCallback
+import com.iflytek.aikitdemo.ability.AbilityCallbackTTs
+import com.iflytek.aikitdemo.ability.AbilityCallbackEsr
 import com.iflytek.aikitdemo.ability.AbilityConstant
 import com.iflytek.aikitdemo.ability.abilityAuthStatus
 import com.iflytek.aikitdemo.ability.wms_demo.TTSHelper
@@ -47,12 +48,13 @@ import java.io.ByteArrayInputStream
  * @Date 2023/2/23-17:14
  * Copyright 2023 iFLYTEK Inc. All Rights Reserved.
  */
-class WmsDemoActivity : BaseActivity(), AbilityCallback {
+class WmsDemoActivity : BaseActivity(), AbilityCallbackTTs,AbilityCallbackEsr {
 
     private val TAG = "WsmDemoActivity"
     private var aiSoundHelper: TTSHelper? = null
     private lateinit var tvResult: AppCompatTextView
     private lateinit var btnTTS: MaterialButton // 发送语音指令按钮
+    private lateinit var btnTTS1: MaterialButton // 发送语音指令按钮
     private lateinit var btnAudioFile: MaterialButton // 语音流
 
     private var isSpeaking = false
@@ -83,7 +85,8 @@ class WmsDemoActivity : BaseActivity(), AbilityCallback {
 
         tvResult = findViewById(R.id.tvResult)
         btnTTS = findViewById(R.id.btnTTS)
-        btnAudioFile = findViewById(R.id.btnAudioFile) // 语音流
+        btnTTS1 = findViewById(R.id.btnTTS1)
+//        btnAudioFile = findViewById(R.id.btnAudioFile) // 语音流
         initEsr()
         initTts()
     }
@@ -94,9 +97,9 @@ class WmsDemoActivity : BaseActivity(), AbilityCallback {
             setRecorderCallback(recorderCallback)
         }
         tvResult.append( "语音识别：" + AbilityConstant.ESR_ID.abilityAuthStatus() + "\n")
-        btnAudioFile.setOnClickListener {
-            startListening()
-        }
+//        btnAudioFile.setOnClickListener {
+//            startListening()
+//        }
     }
     private fun initTts() {
         val engineId = AbilityConstant.XTTS_ID // 应用ID
@@ -109,7 +112,16 @@ class WmsDemoActivity : BaseActivity(), AbilityCallback {
         //点击 合成按钮
         btnTTS.setOnClickListener {
             startSpeaking()
-            val ttsText = "你好！"
+            val ttsText = "请到达一号库位！"
+            if (TextUtils.isEmpty(ttsText)) {
+                toast("合成文本不能为空")
+                return@setOnClickListener
+            }
+            aiSoundHelper?.startSpeaking(ttsText ?: "")
+        }
+        btnTTS1.setOnClickListener {
+            startSpeaking()
+            val ttsText = "确认到达一号库位！"
             if (TextUtils.isEmpty(ttsText)) {
                 toast("合成文本不能为空")
                 return@setOnClickListener
@@ -150,26 +162,30 @@ class WmsDemoActivity : BaseActivity(), AbilityCallback {
     override fun finish() {
         super.finish()
         aiSoundHelper?.destroy()
+        esrHelper?.destroy()
     }
     // 合成
     @SuppressLint("MissingPermission")
-    override fun onAbilityBegin() {
+    override fun onTTsAbilityBegin() {
         Log.d(TAG, "开始合成数据")
         enableOperationButton(false)
         tvResult.append("开始合成数据\n")
     }
-    override fun onAbilityResult(result: String) {
+    override fun onTTsAbilityResult(result: String) {
         tvResult.append("${result}\n")
     }
-    override fun onAbilityError(code: Int, error: Throwable?) {
+    override fun onTTsAbilityError(code: Int, error: Throwable?) {
         tvResult.append("合成失败:${code} ${error?.message}\n")
     }
-    override fun onAbilityEnd() {
+    override fun onTTsAbilityEnd() {
         tvResult.append("合成结束=====\n")
-        tvResult.append("开始播放...\n")
+        tvResult.append("开始播放<=====\n")
     }
+
+
     private fun enableOperationButton(boolean: Boolean) {
-        btnTTS.isEnabled = boolean
+//        btnTTS.isEnabled = boolean
+
     }
     // ----- 识别 -------
     private val recorderCallback = object : RecorderCallback {
@@ -188,53 +204,45 @@ class WmsDemoActivity : BaseActivity(), AbilityCallback {
             Log.d(TAG, "onResumeRecord")
 
         }
-
         override fun onRecordProgress(data: ByteArray, sampleSize: Int, volume: Int) {
             Log.d(TAG, "onRecordProgress")
         }
-
         override fun onStopRecord(output: File?) {
             Log.d(TAG, "onStopRecord")
         }
-
     }
     private fun startListening(){
-        lifecycleScope.launch(Dispatchers.IO) {
-//            esrHelper?.startAudioRecord(0) // Start the ESR helper
-            audioRecord.startRecording()
-            Log.d(TAG, "startListening")
-            while (isListening) {
-                if (!isSpeaking) {
-                    val bytes = audioRecord.read(buffer, 0, buffer.size)
-                    if (bytes > 0) {
-                        val inputStream = ByteArrayInputStream(buffer)
-                        kotlin.runCatching {
-                            esrHelper?.writeStream(0, inputStream) // Assuming language is defined somewhere in your class
-                        }.onFailure {
-                            it.printStackTrace()
-                        }
-                    }
-                }
-            }
-            audioRecord.stop()
-            esrHelper?.stopAudioRecord()
-        }
+        esrHelper?.startAudioRecord(0)
     }
     private val stopListening = {
-        isListening = false
+        esrHelper?.stopAudioRecord()
     }
 
     private val startSpeaking = {
         stopListening()
-        isSpeaking = true
-        // TODO: Start speech synthesis here
     }
 
     private val stopSpeaking = {
-        // TODO: Stop speech synthesis here
-        isSpeaking = false
-        isListening = true
         startListening()
+    }
+    // 合成
+    @SuppressLint("MissingPermission")
+    override fun onEsrAbilityBegin() {
+        Log.d(TAG, "开始监听")
+//        enableOperationButton(false)
+        tvResult.append("开始监听<====\n")
+    }
+    override fun onEsrAbilityResult(result: String) {
+        tvResult.append("${result}\n")
+        toast("收到回复！")
+    }
+    override fun onEsrAbilityError(code: Int, error: Throwable?) {
+        tvResult.append("识别失败:${code} ${error?.message}\n")
+    }
+
+
+    override fun onEsrAbilityEnd() {
+        tvResult.append("监听结束=====>\n")
     }
     // ----- 识别 -------
 }

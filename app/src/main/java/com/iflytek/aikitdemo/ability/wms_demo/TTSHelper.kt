@@ -8,7 +8,7 @@ import com.iflytek.aikit.core.AiListener
 import com.iflytek.aikit.core.AiRequest
 import com.iflytek.aikit.core.AiResponse
 import com.iflytek.aikitdemo.MyApp
-import com.iflytek.aikitdemo.ability.AbilityCallback
+import com.iflytek.aikitdemo.ability.AbilityCallbackTTs
 import com.iflytek.aikitdemo.ability.AbilityConstant
 import com.iflytek.aikitdemo.media.PcmAudioPlayer
 import com.iflytek.aikitdemo.tool.mainThread
@@ -31,7 +31,7 @@ import java.util.concurrent.atomic.AtomicInteger
  */
 class TTSHelper(
     private val engineId: String,
-    private val callBack: AbilityCallback,
+    private val callBack: AbilityCallbackTTs,
     private val pcmPlayerCallback: PcmAudioPlayer.PcmPlayerListener
 ) : AiListener {
     companion object {
@@ -133,7 +133,7 @@ class TTSHelper(
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "open ivw error code ===> $ret")
             mainThread {
-                callBack.onAbilityError(ret, Throwable("引擎初始化失败"))
+                callBack.onTTsAbilityError(ret, Throwable("引擎初始化失败"))
             }
             return
         }
@@ -161,7 +161,7 @@ class TTSHelper(
         aiHandle = AiHelper.getInst().start(engineId, paramBuilder.build(), null)
         if (aiHandle?.code != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "启动会话失败")
-            callBack.onAbilityError(
+            callBack.onTTsAbilityError(
                 aiHandle?.code ?: AbilityConstant.ABILITY_CUSTOM_UNKNOWN_CODE,
                 Throwable("启动会话失败")
             )
@@ -175,7 +175,7 @@ class TTSHelper(
         ret = AiHelper.getInst().write(dataBuilder.build(), aiHandle)
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "合成写入数据失败")
-            callBack.onAbilityError(ret, Throwable("合成写入数据失败"))
+            callBack.onTTsAbilityError(ret, Throwable("合成写入数据失败"))
             return
         }
         Log.w(TAG, "合成写入成功")
@@ -253,7 +253,7 @@ class TTSHelper(
             AiEvent.EVENT_START.value -> {
                 //引擎计算开始
                 mainThread {
-                    callBack.onAbilityBegin()
+                    callBack.onTTsAbilityBegin()
                 }
                 audioPlayer.prepareAudio {
                     Log.i(TAG, "开始播放")
@@ -267,7 +267,7 @@ class TTSHelper(
             AiEvent.EVENT_END.value -> {
                 //引擎计算结束
                 mainThread {
-                    callBack.onAbilityEnd()
+                    callBack.onTTsAbilityEnd()
                 }
                 getCacheArray()?.let { array ->
                     audioPlayer.writeMemFile(array)
@@ -278,7 +278,7 @@ class TTSHelper(
             AiEvent.EVENT_TIMEOUT.value -> {
                 mainThread {
                     //引擎超时
-                    callBack.onAbilityError(
+                    callBack.onTTsAbilityError(
                         AbilityConstant.ABILITY_CUSTOM_UNKNOWN_CODE,
                         Throwable("引擎超时")
                     )
@@ -322,7 +322,7 @@ class TTSHelper(
         msg: String?,
         usrContext: Any?
     ) {
-        callBack.onAbilityError(err, Throwable(msg ?: "能力输出失败"))
+        callBack.onTTsAbilityError(err, Throwable(msg ?: "能力输出失败"))
     }
 
 

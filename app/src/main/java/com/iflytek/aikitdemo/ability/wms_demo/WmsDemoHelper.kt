@@ -9,7 +9,7 @@ import com.iflytek.aikit.core.AiRequest
 import com.iflytek.aikit.core.AiResponse
 import com.iflytek.aikit.core.AiStatus
 import com.iflytek.aikit.utils.log.LogUtil.init
-import com.iflytek.aikitdemo.ability.AbilityCallback
+import com.iflytek.aikitdemo.ability.AbilityCallbackEsr
 import com.iflytek.aikitdemo.ability.AbilityConstant
 import com.iflytek.aikitdemo.media.audio.AudioRecorder
 import com.iflytek.aikitdemo.media.audio.RecorderCallback
@@ -26,7 +26,7 @@ import java.util.concurrent.atomic.AtomicBoolean
  * Copyright 2023 iFLYTEK Inc. All Rights Reserved.
  */
 class WmsDemoHelper(
-    private val callBack: AbilityCallback
+    private val callBack: AbilityCallbackEsr
 ) : RecorderCallback, AiListener {
 
     companion object {
@@ -67,7 +67,7 @@ class WmsDemoHelper(
         Log.i(TAG, "引擎初始化结果：$ret")
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             mainThread {
-                callBack.onAbilityError(ret, Throwable("引擎初始化结果 ===> $ret"))
+                callBack.onEsrAbilityError(ret, Throwable("引擎初始化结果 ===> $ret"))
             }
             return false
         }
@@ -111,7 +111,7 @@ class WmsDemoHelper(
         if (initParams(language)) return
         recorder.startRecording()
         mainThread {
-            callBack.onAbilityBegin()
+            callBack.onEsrAbilityBegin()
         }
     }
 
@@ -138,7 +138,7 @@ class WmsDemoHelper(
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "open esr error code ===> $ret")
             mainThread {
-                callBack.onAbilityError(ret, Throwable("open esr error code"))
+                callBack.onEsrAbilityError(ret, Throwable("open esr error code"))
             }
             return true
         }
@@ -147,12 +147,12 @@ class WmsDemoHelper(
         ret = AiHelper.getInst().specifyDataSet(
             AbilityConstant.ESR_ID,
             "FSA",
-            intArrayOf(0, 1, 3)
+            intArrayOf(0)
         )
         if (ret != AbilityConstant.ABILITY_SUCCESS_CODE) {
             Log.w(TAG, "open esr specifyDataSet error code ===> $ret")
             mainThread {
-                callBack.onAbilityError(ret, Throwable("open esr specifyDataSet error"))
+                callBack.onEsrAbilityError(ret, Throwable("open esr specifyDataSet error"))
             }
             return true
         }
@@ -172,7 +172,7 @@ class WmsDemoHelper(
             ret = aiHandle?.code ?: AbilityConstant.ABILITY_CUSTOM_UNKNOWN_CODE
             Log.w(TAG, "open esr start error code ===> $ret")
             mainThread {
-                callBack.onAbilityError(ret, Throwable("open esr start error"))
+                callBack.onEsrAbilityError(ret, Throwable("open esr start error"))
             }
             return true
         }
@@ -205,9 +205,9 @@ class WmsDemoHelper(
         val ret = AiHelper.getInst().end(aiHandle)
         mainThread {
             if (ret == AbilityConstant.ABILITY_SUCCESS_CODE) {
-                callBack.onAbilityEnd()
+                callBack.onEsrAbilityEnd()
             } else {
-                callBack.onAbilityError(ret, Throwable("aiHandle end error"))
+                callBack.onEsrAbilityError(ret, Throwable("aiHandle end error"))
             }
         }
         aiHandle = null
@@ -311,7 +311,7 @@ class WmsDemoHelper(
             val tempValue = item.value.toString(Charset.forName("GBK"))
             if (tempKey.contains("plain") || tempKey.contains("pgs")) {
                 mainThread {
-                    callBack.onAbilityResult("$tempKey: \n$tempValue")
+                    callBack.onEsrAbilityResult("$tempKey: \n$tempValue")
                 }
             }
         }
@@ -354,7 +354,7 @@ class WmsDemoHelper(
     ) {
         val tips = "onError==>,ERROR::$msg,err code:$err"
         mainThread {
-            callBack.onAbilityError(err, Throwable(tips))
+            callBack.onEsrAbilityError(err, Throwable(tips))
         }
         Log.e(TAG, tips)
     }

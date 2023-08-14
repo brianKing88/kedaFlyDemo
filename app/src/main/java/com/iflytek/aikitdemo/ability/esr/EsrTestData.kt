@@ -8,10 +8,11 @@ package com.iflytek.aikitdemo.ability.esr
  */
 
 enum class EsrFsaEnum(val path: String) {
-    CALL("Call.txt"),
-    ALBUM("Album.txt"),
-    VIDEO("Video.txt"),
-    APP("App.txt")
+//    CALL("Call.txt"),
+//    ALBUM("Album.txt"),
+//    VIDEO("Video.txt"),
+//    APP("App.txt")
+    APP("My.txt")
 }
 
 //命令词语法文件示例，对应资源里面的命令词文件App.txt
